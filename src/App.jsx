@@ -2,11 +2,11 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Navigate, Route, Routes } from "react-router";
 
-import "./App.css";
 import AuthLayout from "./layout/AuthLayout";
 import PrivateLayout from "./layout/PrivateLayout";
 import PublicLayout from "./layout/PublicLayout";
 import RoutesList from "./routes";
+import "./App.css";
 
 const App = () => {
   const { user } = useSelector((store) => store.auth);
